@@ -6,7 +6,7 @@ This repository provides a Dockerized HAProxy setup for proxying HTTPS traffic t
 
 ```bash
 # Clone this Repository
-git clone https://github.com/your-username/your-haproxy-repo.git
+git clone https://github.com/kushalg-1212/haproxy.git
 cd your-haproxy-repo
 
 # Build the Docker Image
