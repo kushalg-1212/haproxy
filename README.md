@@ -12,8 +12,10 @@ cd your-haproxy-repo
 # Build the Docker Image
 docker build -t my-haproxy .
 
+# Validate Configuration Syntax
+docker run -it --rm --name haproxy-syntax-check my-haproxy haproxy -c -f /usr/local/etc/haproxy/haproxy.cfg
+
 # Run HAProxy using Docker Compose
 docker-compose up -d
 
-# Validate Configuration Syntax
-docker run -it --rm --name haproxy-syntax-check my-haproxy haproxy -c -f /usr/local/etc/haproxy/haproxy.cfg
+
