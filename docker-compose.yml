@@ -1,0 +1,6 @@
+version: '3'
+services:
+  my-haproxy:
+    image: my-haproxy
+    ports:
+      - "8081:8081"
